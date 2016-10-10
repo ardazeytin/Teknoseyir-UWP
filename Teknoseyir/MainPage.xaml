@@ -1,0 +1,133 @@
+﻿
+<Page
+    x:Class="Teknoseyir.MainPage"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Teknoseyir"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <SplitView Background="White"  x:Name="ShellSplitView" DisplayMode="CompactInline" PaneBackground="White" Foreground="#FF960F0A">
+            <SplitView.Pane>
+                <Grid Background="#FF272727">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+
+                    <StackPanel Margin="0,48,0,0" Orientation="Vertical" Grid.Row="0" Background="#FF272727">
+
+                        <ListBox>
+                            <ListBoxItem x:Name="btnGoHome" Tapped="btnGoHome_Tapped" Background="#FF272727" Foreground="White" Height="1" >
+                                <StackPanel Orientation="Horizontal" Height="28" VerticalAlignment="Center" HorizontalAlignment="Stretch" >
+                                    <TextBlock   FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE10F;" VerticalAlignment="Center" TextAlignment="Center"  />
+                                    <TextBlock Text="Ana Sayfa" FontSize="18" Margin="20,0,0,0" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem x:Name="btnNotification" Tapped="btnNotification_Tapped" Background="#FF272727" Foreground="White" Height="48">
+                                <StackPanel Orientation="Horizontal" Height="28" VerticalAlignment="Center" HorizontalAlignment="Stretch" >
+                                    <TextBlock   FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xEA8F;" VerticalAlignment="Center" TextAlignment="Center"  />
+                                    <TextBlock Text="Bildirimler" FontSize="18" Margin="20,0,0,0" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem x:Name="btnMentions" Tapped="btnMentions_Tapped" Background="#FF272727" Foreground="White" Height="48">
+                                <StackPanel Orientation="Horizontal" Height="28" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                    <TextBlock   FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE168;" VerticalAlignment="Center" TextAlignment="Center"  />
+                                    <TextBlock Text="Bahsedenler" FontSize="18" Margin="20,0,0,0" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem x:Name="btnFav" Tapped="btnFav_Tapped" Background="#FF272727" Foreground="White" Height="48">
+                                <StackPanel Orientation="Horizontal" Height="28" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                    <TextBlock   FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE208;" VerticalAlignment="Center" TextAlignment="Center"  />
+                                    <TextBlock Text="Favoriler" FontSize="18" Margin="20,0,0,0" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem x:Name="btnProfil" Tapped="btnProfil_Tapped" Background="#FF272727" Foreground="White" Height="48" >
+                                <StackPanel Orientation="Horizontal" Height="28" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                    <TextBlock   FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE779;" VerticalAlignment="Center" TextAlignment="Center"  />
+                                    <TextBlock Text="Profil" FontSize="18" Margin="20,0,0,0" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </ListBoxItem>
+
+
+
+                        </ListBox>
+                        <Rectangle Height="1" Fill="DarkGray"/>
+                        <ListBox>
+                            <ListBoxItem x:Name="btnYoutube" Tapped="btnYoutube_Tapped" Background="#FF272727" Foreground="White" Height="48">
+                                <StackPanel Orientation="Horizontal" Height="28" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                    <TextBlock   FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE786;" VerticalAlignment="Center" TextAlignment="Center"  />
+                                    <TextBlock Text="Youtube" FontSize="18" Margin="20,0,0,0" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem x:Name="btnChat" Tapped="btnChat_Tapped" Background="#FF272727" Foreground="White" Height="48">
+                                <StackPanel Orientation="Horizontal" Height="28" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                    <TextBlock   FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE8F2;" VerticalAlignment="Center" TextAlignment="Center"  />
+                                    <TextBlock Text="Chat" FontSize="18" Margin="20,0,0,0" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem x:Name="btnStore" Tapped="btnStore_Tapped" Background="#FF272727" Foreground="White" Height="48">
+                                <StackPanel Orientation="Horizontal" Height="28" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                    <TextBlock   FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE7BF;" VerticalAlignment="Center" TextAlignment="Center"  />
+                                    <TextBlock Text="Mağaza" FontSize="18" Margin="20,0,0,0" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </ListBoxItem>
+                        </ListBox>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2" VerticalAlignment="Bottom" Orientation="Vertical">
+                        <Rectangle Height="1" Fill="DarkGray"/>
+                        <ListBox>
+                            <ListBoxItem x:Name="btnSettings" Tapped="btnSettings_Tapped" Background="#FF272727" Foreground="White" Height="48">
+                                <StackPanel Orientation="Horizontal" Height="28" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                    <TextBlock   FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE115;" VerticalAlignment="Center" TextAlignment="Center"  />
+                                    <TextBlock Text="Uygulama Ayarları" FontSize="18" Margin="20,0,0,0" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </ListBoxItem>
+                        </ListBox>
+                    </StackPanel>
+                </Grid>
+            </SplitView.Pane>
+
+            <SplitView.Content>
+                <Grid x:Name="webViewGrid">
+                    <WebView x:Name="webView"   Height="auto" Width="auto"  Source="http://teknoseyir.com/" IsRightTapEnabled="True" IsHoldingEnabled="True" LoadCompleted="webView_LoadCompleted" ContentLoading="webView_ContentLoading" NewWindowRequested="webView_NewWindowRequested" />
+                    <ProgressBar x:Name="progRing"  IsIndeterminate="True" Foreground="DarkRed" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="0,0,0,0" />
+                    <TextBox x:Name="tbxNotifiMain"  HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="130" Opacity="0" />
+                </Grid>
+            </SplitView.Content>
+        </SplitView>
+
+        <Grid x:Name="mainpageAppBarGrid" HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="#FF272727" Height="48"  >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox  x:Name="tbxWebPageAdress" Grid.Column="2" VerticalAlignment="Center" Margin="10,0,10,0" BorderBrush="DarkGray"  LostFocus="tbxWebPageAdress_LostFocus" GotFocus="tbxWebPageAdress_GotFocus" KeyDown="tbxWebPageAdress_KeyDown"></TextBox>
+
+            <Button x:Name="btnFakeHamburger" IsEnabled="False" Content="" Grid.Column="0" Foreground="Orange" Background="Purple" VerticalAlignment="Top" HorizontalAlignment="Left" Width="48" Height="48" FontFamily="Segoe MDL2 Assets" FontSize="21.333" FontWeight="Bold" Opacity="1"/>
+            <StackPanel x:Name="stack1AppBarGrid" Orientation="Horizontal" Grid.Column="1">
+                <AppBarButton x:Name="btnStop" Icon="Cancel" Width="48" Opacity="0" IsEnabled="False" Foreground="White"  Margin="48,0,0,0" Click="btnStop_Click"/>
+                <AppBarButton x:Name="btnGo" Icon="Go" Width="48" Opacity="0" IsEnabled="False" Foreground="White"  Click="btnGo_Click" />
+            </StackPanel>
+            <StackPanel x:Name="stack2AppBarGrid" Orientation="Horizontal" Grid.Column="1">
+                <AppBarButton x:Name="btnForward" Icon="Forward" Width="48" Foreground="White" Click="btnForward_Click"/>
+                <AppBarButton x:Name="btnRefresh" Icon="Refresh" Width="48" Foreground="White" Click="buttonRefresh_Click"/>
+                <AppBarButton x:Name="btnHome" Icon="Home" Width="48" Foreground="White"  Click="Mainpage_Click"/>
+            </StackPanel>
+        </Grid>
+
+        <Button x:Name="btnHamburger" Opacity="1" Content="" Grid.Column="0" Click="HamburgerRadioButton_Checked" Foreground="White" Background="DarkRed" VerticalAlignment="Top" HorizontalAlignment="Left" Width="48" Height="48" FontFamily="Segoe MDL2 Assets" FontSize="21.333" FontWeight="Bold"/>
+    </Grid>
+</Page>
