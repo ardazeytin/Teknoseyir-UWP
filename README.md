@@ -1,6 +1,8 @@
 # Teknoseyir-UWP
 Windows 10 Universal Application for teknoseyir.com social technology website. Working on Windows 10 desktops, Windows 10 tablets and Windows 10 mobile devices
 
+[Download from Windows Store]
+
 ## Built With
 * [Windows 10 SDK] 
 * [Visual Studio 2015]
@@ -29,3 +31,4 @@ width="360">
 [Visual Studio 2015]: <https://www.visualstudio.com/tr/downloads/>
 [Microsoft Emulator for Windows 10 Mobile]: <https://www.microsoft.com/en-us/download/details.aspx?id=53424>
 [Youtube Data API v3]: <https://developers.google.com/youtube/v3/>
+[Download from Windows Store]: <https://www.microsoft.com/store/apps/9nblggh1zzdr>
