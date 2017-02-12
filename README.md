@@ -3,6 +3,11 @@ Windows 10 Universal Application for teknoseyir.com social technology website. W
 
 [Download from Windows Store]
 
+## Prerequisites
+* Windows 10 
+* Visual Studio 2015 or higher version
+* [Windows 10 SDK]
+
 ## Built With
 * [Windows 10 SDK] 
 * [Visual Studio 2015]
